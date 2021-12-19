@@ -72,12 +72,7 @@ public class LineFrame extends JFrame {
         buttonPanel.add(reverseButton);
         buttonPanel.add(statButton);
         buttonPanel.add(calcButton);
-
-        comparePanel.add(firstLabel);
-        comparePanel.add(firstTextField);
-        comparePanel.add(secondLabel);
-        comparePanel.add(secondTextField);
-        comparePanel.add(compareButton);
+        buttonPanel.add(compareButton);
 
         limitPanel.add(jCheckBox);
         limitPanel.add(limitTextField);
@@ -86,7 +81,6 @@ public class LineFrame extends JFrame {
         framePanel.add(fieldPanel);
         framePanel.add(textPanel);
         framePanel.add(buttonPanel);
-        framePanel.add(comparePanel);
         framePanel.add(limitPanel);
 
         updateTextArea();
