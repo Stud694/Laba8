@@ -1,6 +1,6 @@
 package org.bsuir.laba8.proj.view;
 
-import org.bsuir.laba8.proj.controller.LineController;
+import org.bsuir.laba8.proj.controller.TabelController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 public class CompareFrame extends JFrame {
 
-    private LineController controller;
+    private TabelController controller;
     private JPanel comparePanel;
     private JComboBox<String> firstComboBox;
     private JComboBox<String> secondComboBox;
@@ -16,7 +16,7 @@ public class CompareFrame extends JFrame {
     private JLabel secondLabel;
     private JButton compareButton;
 
-    public CompareFrame(LineController controller){
+    public CompareFrame(TabelController controller){
         super("Сравнение строк");
         this.controller = controller;
         createUIComponents();

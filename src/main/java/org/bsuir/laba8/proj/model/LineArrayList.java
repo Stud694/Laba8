@@ -40,7 +40,6 @@ public class LineArrayList extends ArrayList {
         arrayList.addAll(linkedList);
     }
 
-    //10
     public int compareInnerObjects(int firstIndex, int secondIndex){
         String firstLine = arrayList.get(firstIndex);
         String secondLine = arrayList.get(secondIndex);
