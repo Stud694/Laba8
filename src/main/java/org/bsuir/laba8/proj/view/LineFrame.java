@@ -117,7 +117,7 @@ public class LineFrame extends JFrame {
         loadButton = new JButton("Загрузить текстовый файл");
         compareButton = new JButton("Сравнить две строки");
         calcButton = new JButton("Подсчитать длины строк");
-        limitButton = new JButton("Задать лимит строк");
+        limitButton = new JButton("Задать лимит количества строк");
 
         addButton.addActionListener(new AddActionListener());
         deleteButton.addActionListener(new DeleteActionListener());
@@ -131,7 +131,7 @@ public class LineFrame extends JFrame {
         calcButton.addActionListener(new CalculatorActionListener());
         limitButton.addActionListener(new LimitActionListener());
 
-        jCheckBox = new JCheckBox("использовать лимит строк");
+        jCheckBox = new JCheckBox("использовать лимит количества строк");
         jCheckBox.addItemListener(new CheckBoxListener());
 
         textArea = new JTextArea(5, 100);
@@ -147,8 +147,8 @@ public class LineFrame extends JFrame {
         firstTextField.setMaximumSize(new Dimension(200, 30));
         secondTextField.setMaximumSize(new Dimension(200, 30));
 
-        firstLabel = new JLabel("первая строка: ");
-        secondLabel = new JLabel("вторая строка: ");
+        firstLabel = new JLabel("Первая строка: ");
+        secondLabel = new JLabel("  Вторая строка: ");
     }
 
     public void updateTextArea(){
